@@ -1,0 +1,32 @@
+{
+    "songs" : [
+        {
+            "id": 0,
+            "name": "O Father O Satan O Sun!",
+            "artist": "Behemoth",
+            "song": "../utils/music/musics/ofos2.mp3",
+            "cover": "../utils/music/img/ofos2.jpg"
+        },
+        {
+            "id": 1,
+            "name": "All Shall Fall",
+            "artist": "Immortal",
+            "song": "../utils/music/musics/asf.mp3",
+            "cover": "../utils/music/img/immortal.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Halloweed Be Thy Name",
+            "artist": "Cradle Of Filth",
+            "song": "../utils/music/musics/hallo.mp3",
+            "cover": "../utils/music/img/cradle.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Unchain My Soul",
+            "artist": "Dark Funeral",
+            "song": "../utils/music/musics/ums.mp3",
+            "cover": "../utils/music/img/usm.jpg"
+        }
+    ]
+}

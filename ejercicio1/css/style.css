@@ -1,0 +1,72 @@
+.slides{
+    text-align: center;
+    position: relative;
+}
+
+#slide1::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg.jpg);
+    filter: blur(5px);
+}
+
+#slide2::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/mayhem.jpg);
+}
+
+#slide3::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/venom.jpg);
+}
+
+#slide4::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/behemmoth.jpg);
+}
+
+#slide5::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/darkfuneral.jpg);
+}
+
+#slide6::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/dimmu.jpg);
+}
+
+#title{
+    color: #fff;
+}

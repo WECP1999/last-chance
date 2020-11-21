@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies API</title>
+  <link rel="stylesheet" href="./src/main.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+</head>
+
+<body ng-app="marvel" ng-cloak>
+  <div ng-controller="app">
+    <div class="content">
+      <div class="current-movie floating">
+        <md-card class="md-whiteframe-24dp" ng-show="currentMovie !== null">
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">{{ currentMovie.title }} ({{ currentMovie.actors }})</span>
+              <span class="md-subhead">{{ currentMovie.director }}, {{ currentMovie.year }}</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p>{{ currentMovie.plot }}</p>
+          </md-card-content>
+        </md-card>
+      </div>
+      <md-content class="md-padding">
+        <div class="movies-list">
+          <md-card class="movie-card" ng-repeat="movie in movies" ng-mouseenter="onMouseEnter(movie.id)"
+            ng-mouseleave="onMouseLeave($event)">
+            <img ng-src="{{ movie.posterUrl }}" class="md-card-image" alt="Movie List" onerror="onErrorImage(event)">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">{{ movie.title }}</span>
+              </md-card-title-text>
+            </md-card-title>
+          </md-card>
+        </div>
+      </md-content>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+  <script src="./src/main.js" defer></script>
+</body>
+
+</html>
